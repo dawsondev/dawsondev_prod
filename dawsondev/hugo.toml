@@ -3,3 +3,12 @@ languageCode = 'en-us'
 title = 'Oliver Dawson'
 theme = 'hugo-theme-m10c'
 publishDir = 'public'
+[params]
+  subtitle = 'The Best Widgets on Earth'
+  author = 'Oliver Dawson'
+  description = 'description test'
+  favicon ='dawsondev/favicon.ico'
+  avatar = '/dive_zenobia_cyprus.jpg'
+  [params.contact]
+    email = 'dawson_oliver@yahoo.com'
+    phone ='1243243434'
