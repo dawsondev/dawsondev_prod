@@ -1,0 +1,4 @@
+baseURL = 'https://dawsondev.github.io/'
+languageCode = 'en-us'
+title = 'Oliver Dawson'
+theme = 'hugo-theme-m10c'
