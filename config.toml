@@ -1,0 +1,8 @@
+[params]
+  subtitle = 'The Best Widgets on Earth'
+  author = 'Oliver Dawson'
+  description = 'description test'
+  favicon = '/favicon.ico'
+  avatar = '/dive_zenobia_cyprus.jpg'
+  [params.contact]
+    email = 'dawson_oliver@yahoo.com'
