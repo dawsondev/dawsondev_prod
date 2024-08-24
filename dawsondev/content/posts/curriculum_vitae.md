@@ -1,5 +1,11 @@
-+++
-title = 'CV'
-date = 2024-08-23T18:56:39+02:00
-draft = false
-+++
+---
+title: "Curriculum Vitae"
+date: 2024-08-24
+draft: false
+---
+
+# My CV
+
+You can view my CV directly in your browser:
+
+[View CV](cv/cv.pdf)
