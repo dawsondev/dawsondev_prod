@@ -1,13 +1,14 @@
-<div id="footer" class="mb-5">
+<div id="footer">
     <hr>
-    <div class="container text-center">
+    <div align="center">
         {{ range $item := .Site.Params.socialIcons }}
-            <a href="{{ $item.url }}" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}"></a>
+            <a href="{{ $item.url }}" style="color: white; font-size: large; margin: 5px;" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}">
+            </a>
         {{ end }}
     </div>
     {{ with .Site.Params.footer }}
-        <div class="container text-center">
-            <a href="{{ .url | absURL }}" title="{{ .text }}"><small style="font-family: .Site.Params.heading_font; ">{{ .text }}</small></a>
+        <div align="center">
+            <a style="color: white; font-size: large;" title="{{ .text }}"><small>{{ .text }}</small></a>
         </div>
     {{ end }}
 </div>

@@ -28,7 +28,6 @@ paginate = 10
   favicon ='https://dawsondev.github.io/favicon.ico'
   avatar = '/dive_zenobia_cyprus.jpg'
   [params.footer]
-       fontFamily = "Corben"
        text = "Copyright Oliver Dawson 2024"
        height = "50px"
        weight = "50px"
@@ -39,9 +38,9 @@ paginate = 10
     [[params.socialIcons]]
        icon = "fab fa-linkedin"
        title = "LinkedIn"
-    url = "https://www.linkedin.com/"
+    url = "https://www.linkedin.com/in/oliver-dawson-00202a208"
     [[params.socialIcons]]
        icon = "fas fa-envelope"
        title = "E-mail"
-       url = "dawson_oliver@yahoo.com"
+       url = "mailto:dawson_oliver@yahoo.com"
 
