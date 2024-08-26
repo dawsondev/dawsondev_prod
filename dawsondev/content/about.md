@@ -5,12 +5,21 @@ date = "1012-01-07"
 draft = false
 +++
 
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia lorem quis sodales auctor. Donec bibendum odio leo, bibendum iaculis lectus dapibus sit amet. Etiam ut euismod lectus, vel finibus metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer quis vestibulum justo. Duis scelerisque ullamcorper sem, eget congue lorem ultrices mattis. Nam ut mollis tellus, id facilisis turpis. Duis ac egestas mi, a mattis dolor. Curabitur vestibulum est nec tortor hendrerit, vehicula malesuada quam tempor. Duis ornare tortor dapibus, scelerisque est lacinia, aliquet mi. Vivamus convallis malesuada augue ac viverra. Sed molestie erat at sem dapibus porttitor. Vestibulum lacinia, enim id feugiat varius, felis erat sollicitudin nisl, sit amet semper nisi nunc in nisl. Sed dapibus ullamcorper nulla, et molestie lacus accumsan ac.
+Hi I am Oli, 27 years old and currently a Student of "Wirtschaftsinformatik" at Karlsruhe University. Literally translated this means Economics Computer Science but is also known as Business Information Systems. Glad you are taking the time to take a look at my little slice of the web. For Details on my professional journey until now, you can look at my CV found under the respective menu item.
 
-Fusce auctor in justo nec porta. Aliquam vitae molestie libero. In scelerisque dolor ac est lacinia, at consectetur neque vulputate. Curabitur ornare lorem vitae euismod vestibulum. Sed non arcu nunc. Suspendisse potenti. Maecenas tristique, dui egestas mattis pulvinar, tortor ligula mollis libero, ac ullamcorper erat nibh in augue. Curabitur nunc diam, pretium at porta et, volutpat sit amet ligula. Proin urna lorem, luctus sit amet metus quis, tempus rutrum augue. Phasellus ut nunc dolor.
+Professionally I aim for a career in Cybersecurity and one reason for this website is to document my journey to become adept in this field, and include some write-ups for CTF challenges like those on https://tryhackme.com/.
+
+Other than that I am interested in Data Science/Machine Learning, Company/Stock Analysis, and other closely-related IT/Business topics. 
+
+Further, I am passionate about history (but I am only an armchair historian and do not claim any professional expertise) and also enjoy Scuba-diving and guitar. Like most of my generation I also like playing the odd video game if time allows.
 
 ---
 About this Website
 ---
 
-Duis a porta mi, non viverra erat. Nam tincidunt lorem nec sollicitudin laoreet. Mauris faucibus vitae urna ac aliquet. Vivamus rutrum rhoncus tempor. Donec massa diam, molestie sit amet nulla eu, venenatis egestas urna. Vivamus hendrerit elit velit, ut volutpat diam condimentum vel. Etiam ultricies, nulla tincidunt rhoncus placerat, velit nisl gravida velit, mollis vestibulum risus mauris sed lectus.
+This website is an ongoing personal project.
+I created it using hugo and the m10c theme. The website is hosted on github pages and thus static. Check out my github for details on my code structure, but basically I made one production repo and one submodule repo I deploy to via the public folder which is where hugo makes the actual website build, so I can organize my code better. 
+
+I want to credit my friend Jesse Yu-Chieh Kuo from my taiwan exchange semester and his website (check it out at https://ujkuo.github.io/) for inspiration.
+
+Also check out my Aunt Inés' website at https://www.inesdawson.com/. She makes cool educational content related to many fields in science and holds a PhD in Biology from Oxford University.
