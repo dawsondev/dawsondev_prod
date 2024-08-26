@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Oliver Dawson'
 theme = ['hugo-theme-m10c']
 publishDir = 'public'
-
+paginate = 10
 [menu]
   [[menu.main]]
     name = "Blog"
@@ -11,19 +11,37 @@ publishDir = 'public'
     weight = 1
   [[menu.main]]
     name = "CV"
-    url = "/cv/"
+    url = "/CV.pdf"
     weight = 2
   [[menu.main]]
     name = "Misc"
     url = "/misc/"
     weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
 
 [params]
   subtitle = 'The Best Widgets on Earth'
   author = 'Oliver Dawson'
-  description = 'description test'
+  description = 'Welcome to my website!'
   favicon ='https://dawsondev.github.io/favicon.ico'
   avatar = '/dive_zenobia_cyprus.jpg'
-  [params.contact]
-    email = 'dawson_oliver@yahoo.com'
-    phone ='1243243434'
+  [params.footer]
+       fontFamily = "Corben"
+       text = "Copyright Oliver Dawson 2024"
+       height = "50px"
+       weight = "50px"
+    [[params.socialIcons]]
+       icon = "fab fa-github-square"
+       title = "Github"
+       url = "https://github.com/dawsondev"
+    [[params.socialIcons]]
+       icon = "fab fa-linkedin"
+       title = "LinkedIn"
+    url = "https://www.linkedin.com/"
+    [[params.socialIcons]]
+       icon = "fas fa-envelope"
+       title = "E-mail"
+       url = "dawson_oliver@yahoo.com"
+
