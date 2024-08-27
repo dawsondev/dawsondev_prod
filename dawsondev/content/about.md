@@ -1,6 +1,6 @@
 +++
 title = "About Me"
-tags = ["test"]
+tags = ["about"]
 date = "1012-01-07"
 draft = false
 +++
