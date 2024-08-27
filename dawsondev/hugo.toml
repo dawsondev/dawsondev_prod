@@ -8,29 +8,24 @@ paginate = 10
   [[menu.main]]
     name = "Blog"
     url = "/blog/"
-    weight = 1
+    weight = 3
   [[menu.main]]
     name = "CV"
     url = "/CV.pdf"
     weight = 2
   [[menu.main]]
-    name = "Misc"
-    url = "/misc/"
-    weight = 3
-  [[menu.main]]
     name = "About"
     url = "/about/"
+    weight = 1
 
 [params]
-  subtitle = 'The Best Widgets on Earth'
+  subtitle = 'DawsonDev'
   author = 'Oliver Dawson'
   description = 'Welcome to my website!'
   favicon ='https://dawsondev.github.io/favicon.ico'
   avatar = '/dive_zenobia_cyprus.jpg'
   [params.footer]
-       text = "Copyright Oliver Dawson 2024"
-       height = "50px"
-       weight = "50px"
+       text = "© Oliver Dawson 2024"
     [[params.socialIcons]]
        icon = "fab fa-github-square"
        title = "Github"

@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <article>
+    <h1>{{ .Title }}</h1>
+
+    <!-- Group posts by section -->
+    {{ range .Site.Sections }}
+      <div class="section-folder">
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <ul class="posts-list">
+          {{ range .Pages }}
+            <li class="posts-list-item">
+              <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+              <span class="posts-list-item-description">
+                {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
+                {{ .PublishDate.Format "Jan 2, 2006" }}
+                <span class="posts-list-item-separator">-</span>
+                {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
+                {{ .ReadingTime }} min read
+              </span>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+
+    {{ partial "pagination.html" $ }}
+  </article>
+{{ end }}

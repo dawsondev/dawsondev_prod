@@ -1,13 +1,12 @@
-<div id="footer">
-    <hr>
-    <div align="center">
+<div id="footer" class="app-container">
+    <div>
         {{ range $item := .Site.Params.socialIcons }}
             <a href="{{ $item.url }}" style="color: white; font-size: large; margin: 5px;" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}">
             </a>
         {{ end }}
     </div>
     {{ with .Site.Params.footer }}
-        <div align="center">
+        <div>
             <a style="color: white; font-size: large;" title="{{ .text }}"><small>{{ .text }}</small></a>
         </div>
     {{ end }}

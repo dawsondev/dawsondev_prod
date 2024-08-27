@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
   <head>
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
      {{ partial "head.html" . }}
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
     <link rel="shortcut icon" href="{{ .Site.Params.favicon | default "https://dawsondev.github.io/favicon.ico" }}" />
@@ -12,6 +13,7 @@
     {{ $style := resources.Get "css/main.scss" | resources.ExecuteAsTemplate "css/main.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     {{ end }}
@@ -51,7 +53,7 @@
         {{ .Content }}
       {{ end }}
     </main>
-    <div>  {{- partial "footer.html" . -}}
+    <div class="app-container" style="align-items: center;"> <hr> {{- partial "footer.html" . -}}
     </div>
   </body>
 </html>
