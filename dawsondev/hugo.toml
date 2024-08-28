@@ -11,7 +11,7 @@ paginate = 10
     weight = 3
   [[menu.main]]
     name = "CV"
-    url = "/CV.pdf"
+    url = "/pdfs/CV.pdf"
     weight = 2
   [[menu.main]]
     name = "About"
