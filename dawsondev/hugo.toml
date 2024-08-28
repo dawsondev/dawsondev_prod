@@ -23,9 +23,9 @@ paginate = 10
   author = 'Oliver Dawson'
   description = 'Welcome to my website!'
   favicon ='https://dawsondev.github.io/favicon.ico'
-  avatar = '/dive_zenobia_cyprus.jpg'
+  avatar = '/images/dive_zenobia_cyprus.jpg'
   [params.footer]
-       text = "© Oliver Dawson 2024"
+       text = "© 2024 Oliver Dawson"
     [[params.socialIcons]]
        icon = "fab fa-github-square"
        title = "Github"

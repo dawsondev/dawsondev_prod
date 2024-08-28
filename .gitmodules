@@ -1,6 +1,3 @@
-[submodule "dawsondev/themes/hugo-embed-pdf-shortcode"]
-	path = dawsondev/themes/hugo-embed-pdf-shortcode
-	url = https://github.com/anvithks/hugo-embed-pdf-shortcode.git
 [submodule "dawsondev/public"]
 	path = dawsondev/public
 	url = https://github.com/dawsondev/dawsondev.github.io.git
