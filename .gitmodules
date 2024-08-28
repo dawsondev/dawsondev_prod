@@ -1,4 +1,0 @@
-[submodule "dawsondev/public"]
-	path = dawsondev/public
-	url = https://github.com/dawsondev/dawsondev.github.io.git
-	branch = main
