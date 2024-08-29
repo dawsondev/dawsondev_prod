@@ -18,7 +18,7 @@ paginate = 10
 [params]
   subtitle = 'DawsonDev'
   author = 'Oliver Dawson'
-  description = 'Welcome to my website! TESTTESTTEST'
+  description = 'Welcome to my website!'
   favicon ='https://dawsondev.github.io/favicon.ico'
   avatar = '/images/dive_zenobia_cyprus.jpg'
   [params.footer]

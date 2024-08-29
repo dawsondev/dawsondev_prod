@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
      {{ partial "head.html" . }}
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
@@ -48,7 +52,7 @@
       </div>
       {{- end }}
     </header>
-    <main class="app-container">
+    <main class="app-container" style="margin-top: 0; padding-top: 0;">
       {{ block "main" . }}
         {{ .Content }}
       {{ end }}
