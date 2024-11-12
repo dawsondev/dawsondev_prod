@@ -50,5 +50,6 @@ This is the heart of all quality Data Science work, especially as a prerequisite
 
 *What is a feature?* - A feature is essentially a column in a data table,  for example, specifically a pandas dataframe column with say a bunch of numbers in every row. The bunch of numbers can be very meaningful or absolutely useless, and thus features can be very meaningful or absolutely useless.
 
-TO BE CONTINUED
+
+
 
