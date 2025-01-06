@@ -1,6 +1,6 @@
 +++
-title = "Dive Review - Cyprus "Zenobia" Wreck Site"
-tags = ["diving"]
+title = "test1"
+tags = ["test1"]
 date = "06-01-2025"
 +++
 
