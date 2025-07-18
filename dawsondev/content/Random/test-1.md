@@ -2,6 +2,7 @@
 title = "test1"
 tags = ["test1"]
 date = "06-01-2025"
+draft = true
 +++
 
 Test 1
