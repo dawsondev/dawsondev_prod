@@ -1,13 +1,13 @@
 +++
 title = "About Me"
 tags = ["about"]
-date = "1012-01-07"
+date = "2025-07-20"
 draft = false
 +++
 
-Hi I am Oli, 27 years old and currently a Student of "Wirtschaftsinformatik" at Karlsruhe University. Literally translated this means Economics Computer Science but is also known as Business Information Systems. Glad you are taking the time to take a look at my little slice of the web. For Details on my professional journey until now, you can look at my CV found under the respective menu item.
+Hi I am Oli, 28 years old and a graduate of "Wirtschaftsinformatik" (M.Sc.) at Karlsruhe University. Literally translated this means Economics Computer Science but is also known as Business Information Systems. Glad you are taking the time to take a look at my little slice of the web. For Details on my professional journey until now, you can look at my CV found under the respective menu item.
 
-Professionally I aim for a career in Cybersecurity and one reason for this website is to document my journey to become adept in this field, and include some write-ups for CTF challenges like those on https://tryhackme.com/.
+Professionally I aim for a career in Cybersecurity and one reason for this website is to document my journey to become adept in this field, and include some write-ups for guides (mainly for my own reference, so I do not have to use my hundreds of bookmarks...) and eventually CTF challenges like those on https://tryhackme.com/.
 
 Other than that I am interested in Data Science/Machine Learning, Company/Stock Analysis, and other closely-related IT/Business topics. 
 

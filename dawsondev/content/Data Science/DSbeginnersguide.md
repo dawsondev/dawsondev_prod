@@ -1,7 +1,7 @@
 +++
 title = "A beginners guide to Data Science"
 tags = ["Data Science","Machine Learning","Educational",]
-date = "1012-01-02"
+date = "2025-05-21"
 +++
 
 ### How to get started with all things Data Science?
@@ -57,12 +57,14 @@ For example, suppose you’re predicting house prices: features like the number 
 
 The key point is that better features make better models. This stage can easily take up the majority of a data scientist’s time. Don’t be afraid to iterate: visualize your engineered features (see how distributions look, how they correlate with the target), and try different transformations. Over time, you’ll develop an intuition for what makes a feature useful. Keep in mind that if your data is unstructured (text, images, etc.), feature engineering might involve more advanced steps (like turning text into numeric vectors, or extracting image features via a neural network), but the core idea remains the same: you’re preparing quality inputs for your model.
 
+If you are interested in practical step-by step python code covering pretty much all of this, check out my data science semester project "Instacart-Project". It shows the incredibly value of feature engineering compared to using default features.
+
 #### Training Your First Machine Learning Model
 
 Once you have clean, well-engineered data, the next step is to actually train a machine learning model. This is where the magic happens – the algorithm finds patterns in your features to make predictions. In practical terms, you’ll be using a library like [scikit-learn](https://scikit-learn.org/) (the go-to Python library for ML) to train models with just a few lines of code. The basic workflow is:
 
 - Split your data into a training set and a test set (e.g. 80/20). The training set is what the model learns from, and the test set is held aside to evaluate how the model performs on unseen data.
-- Choose an algorithm and train (`fit`) your model on the training data.
+- Choose an algorithm and train (`fit`) your model on the training data. Again see the "Instacart-Project" for practical python code.
 - Evaluate the model’s performance on the test set using appropriate metrics (accuracy, precision/recall, RMSE, etc., depending on the task).
 
 For beginners, it’s wise to start with simpler, well-understood algorithms. Some popular model choices include:

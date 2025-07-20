@@ -1,13 +1,21 @@
 +++
 title = 'Digital Forensics'
+date = "2025-05-05"
 +++
 
 
 # Advanced Digital Forensics Guide (Disk Imaging to File Carving)
 
-Digital forensic investigations require a methodical approach and expertise in various tools and techniques. This guide provides a comprehensive, step-by-step walkthrough of advanced disk forensics – from acquiring a forensically sound image of a “cold” (powered-off) system, through detailed file system analysis (FAT32 and ext3/ext4), to recovering deleted data via file carving. All procedures emphasize open-source tools on Linux and professional practices (no casual shortcuts). Use this as a detailed checklist and reference for conducting thorough forensic analysis. Most of what I know is based on research during my masters thesis, although I personally only extensively used certain technologies practically (like bulkextractor) while most I just reviewed as part of research for the thesis.
+Digital forensic investigations require a methodical approach and expertise in various tools and techniques. This guide provides a comprehensive, step-by-step walkthrough of advanced disk forensics – from acquiring a forensically sound image of a “cold” (powered-off) system, through detailed file system analysis (FAT32 and ext3/ext4), to recovering deleted data via file carving. All procedures emphasize open-source tools on Linux. Use this as a detailed checklist and reference for conducting thorough forensic analysis. Most of what I know is based on research during my masters thesis (and some tryhackme rooms), although I personally only extensively used certain technologies practically (like bulkextractor) while most I just reviewed as part of research for the thesis.
 
-## Disk Imaging and Acquisition (Forensically Sound)
+## Basic Digital Forensics workflow
+
+**NIST Standards** (National institute of Science and Technology) are the guidelines I used in my masters thesis since it provides a strong theoretical background to all relevant workflows in digital forensics. The general process starts with collection and ends with reporting. The following image (based on special publication 800-86 NIST) shows the steps that are taken in virtually all forms of digital forensics in some variation or another. For further reading on this, I suggest reviewing the NIST publications on digital forensics.
+
+![NIST](/images/NIST%20copy2.png)
+
+
+## Disk Imaging and Acquisition
 
 **Disk Imaging** is the process of creating a bit-for-bit copy of a storage device, preserving *all* data (including deleted files and slack space). The goal is to obtain a **forensically sound** image that exactly replicates the original drive, so analysis can proceed without risking alteration of the original evidence. Adhering to best practices during acquisition is critical:
 
@@ -16,8 +24,6 @@ Digital forensic investigations require a methodical approach and expertise in v
 * **Imaging Process:** Utilize reliable open-source tools to create the image. Common options include the Linux `dd` utility (for raw images), enhanced versions like `dcfldd`/`dc3dd`, or GUI tools like **Guymager** (which supports raw `dd`, EWF (E01), and AFF formats). For example, using `dd` you might run:
   `sudo dd if=/dev/sdX of=/media/evidence/case1_disk.img bs=4M conv=fsync`
   This reads from the source `/dev/sdX` and writes a raw image file. Guymager provides a user-friendly interface and can calculate hashes on-the-fly. It’s multi-threaded for speed and can directly produce E01 or AFF images with integrated compression.
-
-  &#x20;*Screenshot: Guymager forensic imager (open-source) preparing to acquire attached drives. It can create RAW (dd), E01 (Expert Witness), or AFF images with parallelized hashing and compression.*
 
 * **Hashing and Verification:** Calculate cryptographic hash values (e.g., SHA-256 or MD5) of the source *and* the image to verify integrity. This step ensures the image is an exact replica. Many imaging tools can generate hashes during acquisition; otherwise use commands like `md5sum` or `sha256sum` on the raw image file. The hash of the image **must** match the original drive’s hash for the image to be considered a true, unaltered copy. Log the hash values and store them with your case notes.
 
